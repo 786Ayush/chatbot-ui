@@ -232,7 +232,8 @@ export const ChatInput: FC<ChatInputProps> = ({}) => {
               if (!e.target.files) return
               handleSelectDeviceFile(e.target.files[0])
             }}
-            accept={filesToAccept}
+            accept=".pdf" //{filesToAccept}
+            multiple
           />
         </>
 

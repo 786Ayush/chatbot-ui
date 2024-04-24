@@ -32,20 +32,37 @@ export default function ChatPage() {
             <Brand theme={theme === "dark" ? "dark" : "light"} />
           </div>
 
-          <div className="absolute left-2 top-2">
+          {/* <div className="absolute left-2 top-2">
             <QuickSettings />
-          </div>
+          </div> */}
 
           <div className="absolute right-2 top-2">
             <ChatSettings />
           </div>
 
           <div className="flex grow flex-col items-center justify-center" />
+          <div className="">
+            <div className="flex">
+              <div className="border-input hover:bg-input relative m-2 flex min-h-[60px] w-1/2 items-center justify-center rounded-xl border-2 ">
+                Policy Document
+              </div>
+              <div className="border-input hover:bg-input relative m-2 flex min-h-[60px] w-1/2 items-center justify-center rounded-xl border-2">
+                Endorcement document
+              </div>
+            </div>
 
-          <div className="w-full min-w-[300px] items-end px-2 pb-3 pt-0 sm:w-[600px] sm:pb-8 sm:pt-5 md:w-[700px] lg:w-[700px] xl:w-[800px]">
-            <ChatInput />
+            <div className="flex">
+              <div className="border-input hover:bg-input relative m-2 flex min-h-[60px] w-1/2 items-center justify-center rounded-xl border-2">
+                Quote Document
+              </div>
+              <div className="border-input hover:bg-input relative m-2 flex min-h-[60px] w-1/2 items-center justify-center rounded-xl border-2">
+                Audit Document
+              </div>
+            </div>
+            <div className="w-full min-w-[300px] items-end px-2 pb-3 pt-0 sm:w-[600px] sm:pb-8 sm:pt-5 md:w-[700px] lg:w-[700px] xl:w-[800px]">
+              <ChatInput />
+            </div>
           </div>
-
           <div className="absolute bottom-2 right-2 hidden md:block lg:bottom-4 lg:right-4">
             <ChatHelp />
           </div>

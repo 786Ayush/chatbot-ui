@@ -45,6 +45,9 @@ export const SidebarContent: FC<SidebarContentProps> = ({
         data={filteredData}
         folders={folders}
       />
+      <div className="flex w-full">
+        <img src="/company_logo.png" alt="logo" className="w-full bg-white" />
+      </div>
     </div>
   )
 }

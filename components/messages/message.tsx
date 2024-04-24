@@ -214,31 +214,31 @@ export const Message: FC<MessageProps> = ({
           ) : (
             <div className="flex items-center space-x-3">
               {message.role === "assistant" ? (
-                messageAssistantImage ? (
-                  <Image
-                    style={{
-                      width: `${ICON_SIZE}px`,
-                      height: `${ICON_SIZE}px`
-                    }}
-                    className="rounded"
-                    src={messageAssistantImage}
-                    alt="assistant image"
-                    height={ICON_SIZE}
-                    width={ICON_SIZE}
-                  />
-                ) : (
-                  <WithTooltip
-                    display={<div>{MODEL_DATA?.modelName}</div>}
-                    trigger={
-                      <ModelIcon
-                        provider={modelDetails?.provider || "custom"}
-                        height={ICON_SIZE}
-                        width={ICON_SIZE}
-                      />
-                    }
-                  />
-                )
-              ) : profile?.image_url ? (
+                // messageAssistantImage ? (
+                <Image
+                  style={{
+                    width: `${ICON_SIZE}px`,
+                    height: `${ICON_SIZE}px`
+                  }}
+                  className="rounded bg-white"
+                  src="/Transparent_Logo.png"
+                  alt="assistant image"
+                  height={ICON_SIZE}
+                  width={ICON_SIZE}
+                />
+              ) : // ) : (
+              //   <WithTooltip
+              //     display={<div>{MODEL_DATA?.modelName}</div>}
+              //     trigger={
+              //       <ModelIcon
+              //         provider={modelDetails?.provider || "custom"}
+              //         height={ICON_SIZE}
+              //         width={ICON_SIZE}
+              //       />
+              //     }
+              //   />
+              // )
+              profile?.image_url ? (
                 <Image
                   className={`size-[32px] rounded`}
                   src={profile?.image_url}
